@@ -21,3 +21,9 @@ local.properties
 *.m4a
 *.opus
 *.pcm
+
+# Merge gate logs
+.merge-gate/
+
+# This checkout's own agent settings
+.agent-team/local.env
