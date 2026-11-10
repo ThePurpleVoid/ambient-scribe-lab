@@ -1,0 +1,23 @@
+# Private agent kit files: never published from this public repo
+.agent-team/
+docs/team/
+scripts/agent-team/
+CLAUDE.md
+.claude/
+
+# Build and local
+node_modules/
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+.DS_Store
+.env
+.env.*
+
+# Never commit recorded audio or real encounter data
+*.wav
+*.m4a
+*.opus
+*.pcm
