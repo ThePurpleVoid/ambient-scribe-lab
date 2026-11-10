@@ -1,0 +1,16 @@
+name: phi-gate
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  phi-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: PHI scan self-test
+        run: bash tests/phi/test.sh
+      - name: PHI scan (fails closed)
+        run: bash tests/phi/scan.sh
