@@ -15,6 +15,8 @@ No real patient data is used anywhere. Fixtures are synthetic or from public de-
 | Note QA with transcript citations (`evals/note-qa/`) | Not built yet | | |
 | FHIR R4 export check | Not planned before the first demo | | |
 
+Audio reliability is measured as two numbers: seconds of captured audio lost (target zero: every chunk the phone wrote is uploaded exactly once), and capture gap seconds while a phone call holds the microphone or the app is restarting. Gaps are reported, never hidden.
+
 Every number in this README comes from a run anyone can repeat with the command next to it. A suite with fewer than 20 cases is reported as too small to gate.
 
 ## Repository layout
